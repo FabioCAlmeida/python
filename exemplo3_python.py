@@ -5,3 +5,5 @@ base = float(input("Informe a base:"))
 area = base * altura / 2
 
 print("A area de um triangulo é", area)
+
+
