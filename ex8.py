@@ -1,28 +1,8 @@
-preco = int(input("qual é o valor do produto: "))
+x = int(input("Quantas camisas você tem: "))
 
+y = int(input("Quantas calças você tem: "))
 
-percentual = int(input("Qual é o valor percentual: "))
+z = int(input("Quantos sapatos você tem: "))
 
+print("Você pode de vestir de ", x * y * z, "maneiras diferentes!")
 
-
-valordesconto = preco * percentual / 100
-precodesconto = preco - valordesconto
-valoracrescimo = preco + valordesconto
-
-
-
-escolha = (input("É acrescimo ou desconto: "))
-
-
-if escolha == "desconto":
-    print("o valor do desconto é: ", valordesconto, ", o valor final é :", precodesconto)
-
-
-
-elif escolha == "acrescimo":
-
-
-    print("O valor do acrescimo é: ", valordesconto, ", o valor do produto com acrescimo é: ", valoracrescimo)
-
-else:
-    print("Escolha uma opção! ")
