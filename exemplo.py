@@ -1,3 +1,35 @@
-print ("Hoje foi a primeira aula de CTP")
-print ("Este ano tem Copa do Mundo!")
+#faixa de salario (R$) aliquota
+#ate 1.621,00 7,5%
+#de 1.621,01 ate 2.902,84 9%
 
+
+
+
+
+
+salario = float(input("digite seu salario"))
+if salario <= 1621:
+    inss = salario * 7.5 / 100
+
+if salario > 1621 and salario <= 2902.84:
+    inss = 1621 * 0.075 #(7.5%)
+    inss = inss + (salario - 1621) * 0.09
+
+if salario > 2902.84 and salario <= 4354.27:
+    inss = 1621 * 0.75
+    inss = inss + (2902.84 - 1621) * 0.9
+    inss = inss + (salario - 2902.84) * 0.12
+
+if salario > 4354.27 and salario <= 8475.55:
+    inss = 1621 * 0.75
+    inss = inss + (2902.84 - 1621) * 0.9
+    inss = inss + (4354.27 - 2902.84) * 0.12
+    inss = inss + (salario - 4354.27) * 0.14
+
+if salario > 8475.55:
+    inss = 1621 * 0.75
+    inss = inss + (2902.84 - 1621) * 0.9
+    inss = inss + (4354.27 - 2902.84) * 0.12
+    inss = inss + (8475.55 - 4354.27) * 0.14
+
+print(f"Desconto INSS é {inss}")
